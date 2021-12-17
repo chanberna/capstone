@@ -14,11 +14,10 @@
         android:weightSum="100"
         android:orientation="horizontal">
 
-        <EditText
-            android:id="@+id/searchBox"
+        <SearchView
+            android:id="@+id/searchView"
             android:layout_width="wrap_content"
             android:layout_height="50dp"
-            android:hint="Q  Search"
             android:background="@drawable/shape_rounded"
             android:elevation="2dp"
             android:paddingLeft="10dp"
@@ -37,6 +36,5 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:listitem="@layout/user_format" />
-
 
 </RelativeLayout>
