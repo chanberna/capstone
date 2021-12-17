@@ -8,7 +8,7 @@ import android.widget.EditText
 import android.widget.Toast
 import com.google.firebase.auth.FirebaseAuth
 
-class LogIn : AppCompatActivity() {
+class LoginActivity : AppCompatActivity() {
 
     private lateinit var etEmail: EditText
     private lateinit var etPassword: EditText
@@ -18,11 +18,11 @@ class LogIn : AppCompatActivity() {
     private lateinit var mAuth: FirebaseAuth
 
     override fun onCreate(savedInstanceState: Bundle?) {
-        // This call the parent constructor
+        // This call the parent constructor.
         super.onCreate(savedInstanceState)
-        // This is used to align the xml view to this class
+        // This is used to align the xml view to this class.
         setContentView(R.layout.activity_log_in)
-        // Initialize Firebase Auth
+        // Initialize Firebase Auth.
         mAuth = FirebaseAuth.getInstance()
 
         etEmail = findViewById(R.id.et_email)
@@ -31,7 +31,7 @@ class LogIn : AppCompatActivity() {
         btnSignUp = findViewById(R.id.btn_sign_up)
 
         btnSignUp.setOnClickListener {
-            val intent = Intent(this, SignUp::class.java)
+            val intent = Intent(this, SignUpActivity::class.java)
             startActivity(intent)
         }
 
@@ -44,15 +44,15 @@ class LogIn : AppCompatActivity() {
     }
 
     private fun login(email: String, password: String) {
-        // Logic of login
+        // Logic of login.
         mAuth.signInWithEmailAndPassword(email, password)
             .addOnCompleteListener(this) { task ->
                 if (task.isSuccessful) {
-                    val intent = Intent(this@LogIn, MainActivity::class.java)
+                    val intent = Intent(this@LoginActivity, MainActivity::class.java)
                     finish()
                     startActivity(intent)
                 } else {
-                    Toast.makeText(this@LogIn, "Error occurred, please try again.", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this@LoginActivity, "Error occurred, please try again.", Toast.LENGTH_SHORT).show()
                 }
             }
     }

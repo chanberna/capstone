@@ -24,7 +24,7 @@ class MainActivity : AppCompatActivity() {
         // This is used to align the xml view to this class.
         setContentView(R.layout.activity_main)
 
-        // Initialize mAuth.
+        // Initialize Firebase Auth.
         mAuth = FirebaseAuth.getInstance()
         mDbRef = FirebaseDatabase.getInstance().getReference()
 
@@ -45,7 +45,10 @@ class MainActivity : AppCompatActivity() {
                 for(postSnapshot in snapshot.children) {
                     val currentUser = postSnapshot.getValue(User::class.java)
 
-                    // It will show the current login user.
+                    // This will show the current user in the chat activity page.
+                    //userList.add(currentUser!!)
+
+                    // This will not show the current login user.
                     if(mAuth.currentUser?.uid != currentUser?.uid) {
                         userList.add(currentUser!!)
                     }
@@ -71,7 +74,7 @@ class MainActivity : AppCompatActivity() {
             mAuth.signOut()
 
             // It will direct to the main page when click on Log Out.
-            val intent = Intent(this@MainActivity, LogIn::class.java)
+            val intent = Intent(this@MainActivity, LoginActivity::class.java)
             finish()
             startActivity(intent)
             return true

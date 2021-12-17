@@ -37,7 +37,7 @@ class ChatActivity : AppCompatActivity() {
         senderRoom = receiverUid + senderUid
         receiverRoom = senderUid + receiverUid
 
-        // Set a name in a toolbar.
+        // Set a name in a toolbar and invisible the app name.
         supportActionBar?.title = name
 
         chatRecyclerView = findViewById(R.id.chatRecyclerView)

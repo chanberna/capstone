@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:gravity="center_horizontal"
     android:orientation="vertical"
-    tools:context=".LogIn">
+    tools:context=".LoginActivity">
 
 <androidx.appcompat.widget.Toolbar
     android:id="@+id/toolbar_log_in_activity"
@@ -16,17 +16,17 @@
     <ImageView
         android:id="@+id/app_logo"
         android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_height="90dp"
         android:src="@drawable/ic_unichat"
         android:layout_gravity="center"
-        android:layout_marginTop="30dp" />
+        android:layout_marginTop="10dp" />
 </androidx.appcompat.widget.Toolbar>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_gravity="center"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:orientation="vertical">
 
         <androidx.cardview.widget.CardView
@@ -104,7 +104,23 @@
                     android:gravity="center"
                     android:paddingTop="@dimen/btn_paddingTopBottom"
                     android:paddingBottom="@dimen/btn_paddingTopBottom"
-                    android:text="@string/sign_up"
+                    android:text="Student Sign Up"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/btn_text_size" />
+                <Button
+                    android:id="@+id/btn_fac_sign_up"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/btn_marginStartEnd"
+                    android:layout_marginTop="@dimen/sign_up_screen_btn_marginTop"
+                    android:layout_marginEnd="@dimen/btn_marginStartEnd"
+                    android:background="@drawable/shape_button_rounded"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:gravity="center"
+                    android:paddingTop="@dimen/btn_paddingTopBottom"
+                    android:paddingBottom="@dimen/btn_paddingTopBottom"
+                    android:text="Faculty Sign Up"
                     android:textColor="@android:color/white"
                     android:textSize="@dimen/btn_text_size" />
             </LinearLayout>

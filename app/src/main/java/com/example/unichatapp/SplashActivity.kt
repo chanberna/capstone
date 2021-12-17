@@ -19,10 +19,11 @@ class SplashActivity : AppCompatActivity() {
 
         // Adding the handler to after the a task after some delay.
         Handler().postDelayed({
-            // Start the Intro Activity
-            startActivity(Intent(this@SplashActivity, LogIn::class.java))
+            // Start the Intro Activity.
+            startActivity(Intent(this@SplashActivity, LoginActivity::class.java))
             finish() // Call this when your activity is done and should be closed.
         }, 2500) // Here we pass the delay time in milliSeconds after which the splash activity will disappear.
 
     }
-}
+
+} // End

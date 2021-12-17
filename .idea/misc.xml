@@ -19,8 +19,15 @@
         <entry key="..\:/Users/BeRnA-Spectre/AndroidStudioProjects/ChatApp/app/src/main/res/menu/menu.xml" value="0.13333333333333333" />
         <entry key="..\:/Users/BeRnA-Spectre/AndroidStudioProjects/UniChatApp/app/src/main/res/layout/activity_chat.xml" value="0.10280797101449275" />
         <entry key="..\:/Users/BeRnA-Spectre/AndroidStudioProjects/UniChatApp/app/src/main/res/layout/activity_log_in.xml" value="0.16666666666666666" />
+        <entry key="..\:/Users/BeRnA-Spectre/AndroidStudioProjects/UniChatApp/app/src/main/res/layout/activity_main.xml" value="0.17552083333333332" />
+        <entry key="..\:/Users/BeRnA-Spectre/AndroidStudioProjects/UniChatApp/app/src/main/res/layout/activity_my_profile.xml" value="0.22" />
         <entry key="..\:/Users/BeRnA-Spectre/AndroidStudioProjects/UniChatApp/app/src/main/res/layout/activity_sign_up.xml" value="0.12" />
         <entry key="..\:/Users/BeRnA-Spectre/AndroidStudioProjects/UniChatApp/app/src/main/res/layout/activity_splash.xml" value="0.16576086956521738" />
+        <entry key="..\:/Users/BeRnA-Spectre/AndroidStudioProjects/UniChatApp/app/src/main/res/layout/receive.xml" value="0.14719202898550723" />
+        <entry key="..\:/Users/BeRnA-Spectre/AndroidStudioProjects/UniChatApp/app/src/main/res/layout/receive_message.xml" value="0.14719202898550723" />
+        <entry key="..\:/Users/BeRnA-Spectre/AndroidStudioProjects/UniChatApp/app/src/main/res/layout/sent.xml" value="0.14719202898550723" />
+        <entry key="..\:/Users/BeRnA-Spectre/AndroidStudioProjects/UniChatApp/app/src/main/res/layout/sent_message.xml" value="0.14719202898550723" />
+        <entry key="..\:/Users/BeRnA-Spectre/AndroidStudioProjects/UniChatApp/app/src/main/res/layout/user_format.xml" value="0.13949275362318841" />
       </map>
     </option>
   </component>
